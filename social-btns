@@ -1,0 +1,58 @@
+<!-- FontAwesome Icons -->
+<b:if cond='data:blog.pageType == &quot;item&quot; or data:blog.pageType == &quot;static_page&quot;'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' rel='stylesheet'/>
+</b:if>
+
+<!-- Social Buttons in Blogger XML -->
+<div class='social-btns'>
+    <a class='btn btn-email' expr:href='&quot;mailto:arslanhmdai@gmail.com&quot;'>
+        <i class='fa-solid fa-envelope'/>
+    </a>
+
+    <a class='btn btn-facebook' expr:href='&quot;https://facebook.com/arslanhmdai&quot;' target='_blank'>
+        <i class='fa-brands fa-facebook-f'/>
+    </a>
+
+    <a class='btn btn-instagram' expr:href='&quot;https://instagram.com/arslanhmdai&quot;' target='_blank'>
+        <i class='fa-brands fa-instagram'/>
+    </a>
+</div>
+
+<!-- Social Media Buttons -->
+<style>
+  .social-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Slightly smaller spacing */
+    margin-top: 15px;
+  }
+
+  .social-btns .btn {
+    width: 48px; /* Reduced from 55px */
+    height: 48px; /* Reduced from 55px */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+
+  /* Unique Background Colors */
+  .btn-email { background: linear-gradient(45deg, #FF512F, #F09819); } /* Gradient Orange-Red */
+  .btn-facebook { background: linear-gradient(45deg, #1877F2, #0A58CA); } /* Gradient Blue */
+  .btn-instagram { background: linear-gradient(45deg, #FF512F, #DD2476); } /* Reddish Pink */
+
+  /* Icon Styling */
+  .social-btns .btn i {
+    font-size: 22px; /* Reduced from 26px */
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Hover Effects */
+  .social-btns .btn:hover {
+    transform: scale(1.1);
+  }
+</style>
